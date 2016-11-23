@@ -1,0 +1,59 @@
+body, div, img, p, a, span, h1, h2, h3, h4, h5, h6, button {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:hover, a:focus {  text-decoration: none;  }
+body {  background-color: #fdfdfe  }
+li { list-style-type: none }
+
+.inline-top > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inline-middle > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 侧边栏文字颜色 */
+#left-sidebar {  color: azure;  }
+
+/* 头部导航 */
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* 侧栏菜单 */
+#menu-bar {  padding: 1rem 0;  }
+#menu-bar > * {
+    padding: .5rem 1rem;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+#menu-bar > *:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 内容主题 */
+#body {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+/* 底部 */
+#footer {
+    background-color: #252525;
+}

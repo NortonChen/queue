@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>norton.queue</groupId>
+    <artifactId>queue-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>queue-service</artifactId>
+  <name>queue-service</name>
+  <url>http://maven.apache.org</url>
+ 
+  <dependencies>
+    	<!-- 引用dao层，因为dao层已经引用了entity 所以不需要再引用 -->  
+    <dependency>  
+        <groupId>norton.queue</groupId>  
+        <artifactId>queue-dao</artifactId>  
+        <version>${queue.pkg.ver}</version>  
+    </dependency> 
+    
+  </dependencies>
+</project>
